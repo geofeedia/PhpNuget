@@ -15,7 +15,8 @@ $searchQuery = UrlUtils::GetRequestParamOrDefault("searchQuery","");
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<span class="navbar-brand">PhpNuget</span>
+			<span class="navbar-brand">Code Nuggets</span>
+			<img src="./content/logo.png" style="height: 50px;" />
 		</div>
 		<div id="navbarCollapse" class="collapse navbar-collapse">
 			<form 

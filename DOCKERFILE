@@ -1,5 +1,3 @@
 FROM tutum/apache-php
 
-COPY ./src /app/phpnuget
-
-VOLUME /app/phpnuget/data
+COPY ./src /app/codeNuggets
