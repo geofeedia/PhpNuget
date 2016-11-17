@@ -68,9 +68,9 @@ $packagesRoot = rtrim(dirname(dirname(dirname(__FILE__))),DIRECTORY_SEPARATOR).D
 				<tr style="display:none"><td>Packages Root:</td><td><input size="100" type="text" id="packagesRoot" name="packagesRoot" value="<?php echo $packagesRoot;?>"/></td></tr>
 				<tr><td>php-cgi.exe (for IIS):</td><td><input size="100" type="text" id="phpCgi" name="phpCgi" value="<?php echo $phpCgiExe;?>"/></td></tr>
 				<tr><td>Allow package Update via upload:</td><td>
-					<input type="checkbox" id="packageUpdate" name="packageUpdate" /></td></tr>
+					<input type="checkbox" id="packageUpdate" name="packageUpdate" checked="checked" /></td></tr>
 				<tr><td>Allow package Delete:</td><td>
-					<input type="checkbox" id="packageDelete" name="packageDelete" /></td></tr>
+					<input type="checkbox" id="packageDelete" name="packageDelete" checked="checked" /></td></tr>
 			</table>
 			<input type="submit" value="Install!"></input>
 		</form>

@@ -15,9 +15,9 @@ define('__PWDDESC__',"Min len 8, max len 40");
 
 //If false "Register" is disabled. Users would be only allowed to be registered by
 //the admin
-define('__ALLOWUSERADD__',true);
+define('__ALLOWUSERADD__',false);
 
-define('__ALLOWPACKAGESDELETE__',false);
+define('__ALLOWPACKAGESDELETE__',true);
 define('__ALLOWPACKAGEUPDATE__', true);
 
 //If true users are allowed to add a package only if the firstly added it
