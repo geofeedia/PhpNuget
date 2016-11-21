@@ -83,7 +83,11 @@ class SmallTxtDb
         $this->dbRows = $dbRows;
         $this->dbTypes = $dbTypes;
 		$this->_version = $version;
-        if(!file_exists($this->dbFile)){
+        // For an unknown reaason, checking the db file itself won't work as expected
+        // thus, I'm creating a fake file to determine wether I have or not initialized the db.
+        if(!file_exists($this->dbFile."checked")){
+            $fp2 = fopen($this->dbFile."checked", 'w');
+            fclose($fp2);
             $fp = fopen($this->dbFile, 'w');
             fwrite($fp, "@Version:".$this->_version.$this->cr);
             fwrite($fp, $this->dbRows.$this->cr);

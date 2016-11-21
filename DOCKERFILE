@@ -1,0 +1,7 @@
+FROM tutum/apache-php
+
+COPY ./src /app/codeNuggets
+
+RUN chmod -R 777 /app/codeNuggets/data
+
+VOLUME /data
